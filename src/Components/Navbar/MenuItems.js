@@ -1,3 +1,4 @@
+// MenuItems.js
 export const MenuItems = [
   {
     title: "Home",
@@ -7,9 +8,21 @@ export const MenuItems = [
   },
   {
     title: "Service",
-    url: "/",
+    // url: "/",
     cName: "nav-links",
-    //icon: "fa-solid fa-circle-info"
+    dropdown: [
+      {
+        title: "Service 1",
+        url: "/service1",
+        cName: "dropdown-link"
+      },
+      {
+        title: "Service 2",
+        url: "/service2",
+        cName: "dropdown-link"
+      }
+
+    ]
   },
   {
     title: "Clients",
@@ -25,8 +38,21 @@ export const MenuItems = [
   },
   {
     title: "About",
-    url: "/",
+    // url: "/",
     cName: "nav-links",
+    dropdown: [
+      {
+        title: "Service 1",
+        url: "/service1",
+        cName: "dropdown-link"
+      },
+      {
+        title: "Service 2",
+        url: "/service2",
+        cName: "dropdown-link"
+      }
+
+    ]
     //icon: "fa-solid fa-circle-info"
   },
   {
@@ -34,10 +60,5 @@ export const MenuItems = [
     url: "/",
     cName: "nav-links",
     //icon: "fa-solid fa-address-book"
-  },
-  // {
-  //   title: "Sign Up",
-  //   url: "/signup",
-  //   cName: "nav-links-mobile"
-  // }
+  }
 ];
